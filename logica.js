@@ -1,1 +1,4 @@
-export let cartel="hola mundo";
+
+    export let cartel="hola mundo";
+
+

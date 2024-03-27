@@ -1,4 +1,5 @@
-let cabecrea=document.getElementById("cabecera");
+import { cartel } from '.\logica.js'; 
+ let cabecrea=document.getElementById("cabecera");
 let personajes=[];
 fetch ('https://randomuser.me/api/')
    .then(response=>response.json())
@@ -23,7 +24,7 @@ fetch ('https://randomuser.me/api/')
       console.log(personajes);*/
       })
     .catch(error=> console.error('Error al acceder a la pagina ', error));
-    import { cartel } from "./logica.js";
+    
     let parrafo=document.createElement("p");
     parrafo.textContent=`${cartel}`;
     cabecrea.appendChild(parrafo);
