@@ -1,7 +1,7 @@
 body{
     background-color: #19b13a;
 }
-#principal {
+#divPrincipal {
     background-color: aquamarine;
     display: flex;
     flex-wrap: wrap;
@@ -12,14 +12,14 @@ h1{
 p{
     font-family: fantasy;
 }
-#cabecera{
+#divCabecera{
     text-align: center;
     background-color: rgb(255, 0, 21);
     width: 100%;
     margin: 2%;
 }
 
-.secundario {
+.divSecundario {
     width: 30%; /* Cada carta ocupa el 30% del ancho */
     margin: 1%; /* Margen entre los div */
     border: 3px solid #90972c; /* Borde opcional para visualizar los límites de los div */
@@ -32,12 +32,12 @@ p{
     height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
 }
 @media (max-width: 600px) {
-    .secundario {
+    .divSecundario {
         width: 45%; /* Cuando la pantalla tenga menos de 600px, cada carta ocupará el 45% del ancho */
     }
 }
 @media(max-width:250px){
-    .secundario{
+    .divSecundario{
         width: 90%;
     }
 }
