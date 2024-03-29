@@ -29,3 +29,4 @@ fetch ('https://randomuser.me/api/')
     parrafo.textContent=`${cartel}`;
     divCabera.appendChild(parrafo);
     
+    
