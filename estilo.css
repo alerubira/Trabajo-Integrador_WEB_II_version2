@@ -20,7 +20,7 @@ p{
 }
 
 .divSecundario {
-    width: 30%; /* Cada carta ocupa el 30% del ancho */
+    width: 23%; /* Cada carta ocupa el 30% del ancho */
     margin: 1%; /* Margen entre los div */
     border: 3px solid #90972c; /* Borde opcional para visualizar los límites de los div */
     border-radius: 6px;
