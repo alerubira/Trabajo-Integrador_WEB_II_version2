@@ -1,19 +1,29 @@
 //import { cartel } from './logica.js'; 
  let divCabera=document.getElementById("divCabecera");
 let productos=[];
-fetch ('https://fakestoreapi.com/')
+/*fetch ('https://fakestoreapi.com/products')
    .then(response=>response.json())
    .then(data=>{
        console.log(data);
       
       })
     .catch(error=> console.error('Error al acceder a la pagina ', error));
-    
+    */
    
-    divCabera.appendChild(parrafo);
-   // personajes.filter((obj,index,personajess)=>{return personajess.indexOf(obj)===index} ); 
-    // Generar un número aleatorio entre 1 y 10
-     const numeroAleatorio = Math.floor(Math.random() * 10) + 1;
+   fetch('https://fakestoreapi.com/products')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json(); // Parsea la respuesta JSON
+  })
+  .then(data => {
+    // Hacer algo con los datos obtenidos
+    console.log(data);
+  })
+  .catch(error => {
+    console.error('There has been a problem with your fetch operation:', error);
+  });
 
 
 
